@@ -1,0 +1,41 @@
+﻿Nomor;Nama;Spesialisasi;Pengalaman;Rating;Harga;Jam Awal Aktif;Jam Akhir Aktif;Hari Aktif
+1;dr. Siti Gracia;Dokter Umum;9;99;50000;10:00;20:00;Senin, Selasa, Rabu, Kamis
+2;dr. Agastya Arif;Dokter Umum;18;98;70000;09:00;21:00;Rabu, Jumat, Sabtu
+3;dr. Khaerani Shafa;Dokter Umum;16;99;40000;10:00;19:00;Senin, Kamis, Sabtu
+4;dr. Yurika Larasati;Dokter Umum;7;85;30000;08:00;18:00;Selasa, Rabu, Kamis, Minggu
+5;dr. Puti Kirana;Dokter Umum;3;75;20000;10:00;21:00;Jumat, Sabtu, Minggu
+6;dr. Renjana Amara;Dokter Umum;29;99;75000;08:00;20:00;Senin, Selasa, Rabu, Kamis
+7;dr. Tiurma Kayla;Dokter Umum;12;90;60000;10:00;19:00;Rabu, Jumat, Sabtu
+8;dr. Sarah Sahara;Dokter Umum;16;99;40000;10:00;18:00;Senin, Kamis, Jumat, Minggu
+9;dr. Kezia Kusuma;Dokter Umum;7;85;30000;08:00;12:00;Selasa, Rabu, Kamis
+10;dr. Rizka Rizki;Dokter Umum;2;75;10000;10:00;17:00;Jumat, Sabtu, Minggu
+11;dr. Qinnamon Lisa, Sp.A., M.Sc.;Spesialis Anak;21;98;89000;08:00;14:00;Senin, Selasa, Rabu, Kamis
+12;dr. Louisa Josepha, Sp.A(K);Spesialis Anak;24;97;125000;10:00;17:00;Rabu, Jumat, Sabtu, Minggu
+13;dr. Marisi Kusuma, Sp.A., M.Kes.;Spesialis Anak;14;98;65000;08:00;20:00;Senin, Selasa, Rabu, Kamis
+14;dr. Abigail Kamila, Sp.A., DTM&H, MCTM(TP);Spesialis Anak;24;97;125000;09:00;18:00;Rabu, Jumat, Sabtu, Minggu
+15;dr. Zhafira Yahya, M.Ked(Ped), Sp.A.;Spesialis Anak;17;81;120000;08:00;20:00;Senin, Selasa, Rabu, Kamis
+16;dr. Mutiara Kinan, Sp.A.;Spesialis Anak;4;75;50000;10:00;19:00;Rabu, Jumat, Sabtu
+17;dr. Alya Annisa, Sp.A.;Spesialis Anak;7;85;65000;08:00;20:00;Senin, Selasa, Rabu, Kamis
+18;dr. Pevita Pearche, Sp.A,;Spesialis Anak;12;90;75000;09:00;18:00;Rabu, Jumat, Sabtu, Minggu
+19;dr. Kania Kusuma, Sp.A.;Spesialis Anak;9;99;50000;08:00;20:00;Senin, Selasa, Rabu, Kamis
+20;dr. Rania Rizki, Sp.A.;Spesialis Anak;3;75;30000;10:00;19:00;Rabu, Jumat, Sabtu
+21;dr. Farah Fahira, Sp.PD.;Spesialis Penyakit Dalam;10;97;55000;08:00;20:00;Senin, Selasa, Rabu, Kamis
+22;dr. Syaharani Wismayana, Sp.PD.;Spesialis Penyakit Dalam;12;82;45000;09:00;18:00;Rabu, Jumat, Sabtu, Minggu
+23;dr. Syakira Rachmawati, Sp.PD., FINASIM;Spesialis Penyakit Dalam;12;97;60000;08:00;20:00;Senin, Selasa, Rabu, Kamis
+24;dr. Maya Mulfi, Sp.PD.;Spesialis Penyakit Dalam;7;85;40000;10:00;19:00;Rabu, Jumat, Sabtu
+25;dr. Salsa Puspita, Sp.PD.;Spesialis Penyakit Dalam;3;75;35000;08:00;20:00;Senin, Selasa, Rabu, Kamis
+26;dr. Rakha Arif, Sp.PD.;Spesialis Penyakit Dalam;19;99;60000;09:00;18:00;Rabu, Jumat, Sabtu, Minggu
+27;dr. Taufiq Putra, Sp.PD.;Spesialis Penyakit Dalam;14;90;50000;08:00;20:00;Senin, Selasa, Rabu, Kamis 
+28;dr. Rizkiansyah, Sp.PD.;Spesialis Penyakit Dalam;7;85;40000;10:00;19:00;Rabu, Jumat, 
+29;dr. Dhanakumala, Sp.PD.;Spesialis Penyakit Dalam;29;100;90000;08:00;20:00;Senin, Selasa, Rabu, Kamis
+30;dr. Safira Tasya, Sp.PD.;Spesialis Penyakit Dalam;10;91;62000;09:00;18:00;Rabu, Jumat, Sabtu, Minggu
+31;dr. Nadia Nirmala, Sp.M.;Spesialis Mata;9;90;75000;08:00;20:00;Senin, Selasa, Rabu, Kamis
+32;dr. Amira Nur, Sp.M.;Spesialis Mata;10;89;65000;09:00;18:00;Rabu, Jumat, Sabtu, Minggu
+33;dr. Muhammad Irfan, Sp.M.;Spesialis Mata;11;93;25000;08:00;20:00;Senin, Selasa, Rabu, Kamis
+34;dr. Brittany Intan, Sp.M.;Spesialis Mata;15;89;25000;09:00;18:00;Rabu, Jumat, Sabtu, Minggu
+35;dr. Kartika Bintang, Sp.M.;Spesialis Mata;12;82;200000;08:00;20:00;Senin, Selasa, Rabu, Kamis
+36;dr. April Lestari, Sp.M.;Spesialis Mata;13;90;25000;09:00;18:00;Rabu, Jumat, Sabtu, Minggu
+37;dr. Desfita Putri, Sp.M.;Spesialis Mata;12;91;50000;08:00;20:00;Senin, Selasa, Rabu, Kamis
+38;dr. Anggi Wulan, Sp.M.;Spesialis Mata;15;93;45000;09:00;18:00;Rabu, Jumat, Sabtu, Minggu
+39;dr. Elena Pratama, Sp.M.;Spesialis Mata;9;90;75000;08:00;20:00;Senin, Selasa, Rabu, Kamis
+40;dr. Mutia Sesilia, Sp.M.;Spesialis Mata;15;100;56000;09:00;18:00;Rabu, Jumat, Sabtu, Minggu
