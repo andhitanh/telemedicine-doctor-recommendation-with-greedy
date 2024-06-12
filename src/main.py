@@ -27,6 +27,8 @@ else :
 print()
 print("Anda memilih pelayanan dengan", specialization_choice, "\n")
 
+day = input(("Masukkan hari konsultasi yang Anda inginkan: "))
+
 print("Anda hanya dapat memilih waktu konsultasi antara pukul 08:00 hingga 21:00")
 print("Masukkan jangka waktu konsultasi yang Anda inginkan: ")
 hour_start, minute_start = map(int, input("Masukkan jangka awal konsultasi dengan format JJ:MM (misal 08:00): ").split(':'))
@@ -42,9 +44,9 @@ greedy_method = int(input("Masukkan nomor metode pengurutan yang Anda inginkan (
 
 if greedy_method == 4 :
     doctor_list = density_selection_function(filename)
-    result = greedy_by_density(doctor_list, specialization_choice, hour_start, minute_start, hour_end, minute_end, doctor_number)
+    result = greedy_by_density(doctor_list, specialization_choice, hour_start, minute_start, hour_end, minute_end, day, doctor_number)
 else :
-    result = greedy_by_not_density(filename, greedy_method, specialization_choice, hour_start, minute_start, hour_end, minute_end, doctor_number)
+    result = greedy_by_not_density(filename, greedy_method, specialization_choice, hour_start, minute_start, hour_end, minute_end, day, doctor_number)
 
 if (result) :
     print()

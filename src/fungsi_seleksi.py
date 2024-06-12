@@ -2,9 +2,10 @@ from data_dokter import *
 import pandas as pd
 import numpy as np
 import random
-    
+
+# fungsi seleksi untuk metode greedy by fee, greedy by rating, dan greedy by experience
 def greedy_by_not_density(filename, greedy_method, specialization, time_start, minute_start, 
-                       time_end, minute_end, doctor_number) :
+                       time_end, minute_end, days, doctor_number) :
     df = pd.read_csv(filename, delimiter=';')
     if greedy_method == 1 :
         df = df.sort_values(by='Harga', ascending=True)
@@ -20,7 +21,7 @@ def greedy_by_not_density(filename, greedy_method, specialization, time_start, m
     while len(solution_list) < doctor_number and len(doctor_list) > 0:
         doctor = doctor_list.pop(0)
         if Doctor.fungsiKelayakan(doctor, specialization, time_start, minute_start, 
-                                  time_end, minute_end) :
+                                  time_end, minute_end, days) :
             solution_list.append(doctor)
     
     if len(solution_list) == 0 :
@@ -28,6 +29,7 @@ def greedy_by_not_density(filename, greedy_method, specialization, time_start, m
     else :
         return solution_list
 
+# fungsi seleksi untuk metode greedy by overall aspect (density)
 def density_selection_function(filename) :
     df = pd.read_csv(filename, delimiter=';')
     df = df.sort_values(by='Rating', ascending=False)
@@ -44,12 +46,12 @@ def density_selection_function(filename) :
 
     return density_sorted_doctor_list
 
-def greedy_by_density(doctor_list, specialization, time_start, minute_start, time_end, minute_end, doctor_number) :
+def greedy_by_density(doctor_list, specialization, time_start, minute_start, time_end, minute_end, days, doctor_number) :
     solution_list = []
     while len(solution_list) < doctor_number and len(doctor_list) > 0 :
         doctor = doctor_list.pop(0)
         if Doctor.fungsiKelayakan(doctor[0], specialization, time_start, minute_start, 
-                                  time_end, minute_end) :
+                                  time_end, minute_end, days) :
             solution_list.append(doctor[0])
     
     if len(solution_list) == 0 :

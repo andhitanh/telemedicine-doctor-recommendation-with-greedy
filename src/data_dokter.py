@@ -14,26 +14,14 @@ class Doctor :
         self.days_available = days_available
 
     @staticmethod
-    def fungsiKelayakan(data, specialization, time_start, minute_start, time_end, minute_end) :
+    def fungsiKelayakan(data, specialization, time_start, minute_start, time_end, minute_end, days) :
         if data.specialization == specialization :
-            if data.start_hour >= time_start and data.start_minute >= minute_start and data.end_hour <= time_end and data.end_minute <= minute_end :
+            if data.start_hour >= time_start and data.start_minute >= minute_start and data.end_hour <= time_end and data.end_minute <= minute_end and days in data.days_available:
                 return True
             else : 
                 return False
         else :
             return False
-
-# def csv_to_doctor_list(filename) :
-#     with open(filename, mode='r') as file:
-#         csvFile = csv.DictReader(file, delimiter=';')
-#         doctor_list = []
-#         for lines in csvFile:
-#             start_hour, start_minute = lines['Jam Awal Aktif'].split(':')
-#             end_hour, end_minute = lines['Jam Akhir Aktif'].split(':')
-#             hari_aktif = lines['Hari Aktif'].split(', ')
-#             doctor = Doctor(lines['Nama'], lines['Spesialisasi'], int(lines['Pengalaman']), int(lines['Rating']), int(lines['Harga']), int(start_hour), int(start_minute), int(end_hour), int(end_minute), hari_aktif)
-#             doctor_list.append(doctor)
-#     return doctor_list
 
 def df_to_doctor_list(df):
     doctor_list = []
@@ -41,6 +29,7 @@ def df_to_doctor_list(df):
         start_hour, start_minute = row['Jam Awal Aktif'].split(':')
         end_hour, end_minute = row['Jam Akhir Aktif'].split(':')
         hari_aktif = row['Hari Aktif'].split(', ')
-        doctor = Doctor(row['Nama'], row['Spesialisasi'], int(row['Pengalaman']), int(row['Rating']), int(row['Harga']), int(start_hour), int(start_minute), int(end_hour), int(end_minute), hari_aktif)
+        doctor = Doctor(row['Nama'], row['Spesialisasi'], int(row['Pengalaman']), int(row['Rating']), int(row['Harga']), 
+                        int(start_hour), int(start_minute), int(end_hour), int(end_minute), hari_aktif)
         doctor_list.append(doctor)
     return doctor_list
